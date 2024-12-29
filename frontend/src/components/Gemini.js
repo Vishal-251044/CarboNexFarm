@@ -7,7 +7,7 @@ const Gemini = ({ question }) => {
   useEffect(() => {
     const fetchAnswer = async () => {
       try {
-        const genAI = new GoogleGenerativeAI("AIzaSyAODwZY7HM06MF3Ys4SQ3fp-3hN_xEPsf0");
+        const genAI = new GoogleGenerativeAI("-------Your Gemini API Key-------");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const prompt = `${question}. Answer in one or two sentences: Farmers and companies log in with basic details. Farmers generate carbon points from farm data (size, NPK values, lifespan), sold to companies securely at market rates.`;
