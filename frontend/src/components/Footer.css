@@ -1,0 +1,150 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #27c30b, #e2d51e);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo-part.CarboNex {
+  color: rgb(0, 0, 0); 
+}
+
+.logo-part.Farm {
+  color: rgb(255, 221, 1); 
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+}
+
+.footer-cct-price {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.ask-question-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.question-input {
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #c8d7c5;
+  transition: border-color 0.3s ease;
+}
+
+.question-input:focus {
+  border-color: #3399cc;  
+}
+
+.ask-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #3399cc;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ask-button:hover {
+  background-color: #267c99;  
+  transform: translateY(-2px); 
+}
+
+.ask-button:active {
+  transform: translateY(0); 
+}
+
+.answer-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #a7a7a7;
+  border: 2px solid black;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.answer-section p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    margin-bottom: 15px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    margin: 5px 0;
+  }
+
+  .question-input {
+    width: 90%;  
+  }
+
+  .ask-button {
+    width: 100%;  
+  }
+}
