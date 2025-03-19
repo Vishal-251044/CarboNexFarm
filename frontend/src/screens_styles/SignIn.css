@@ -1,0 +1,143 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .signin-box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .signin-image {
+    width: 50%;
+  }
+  
+  .signin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .signin-form {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .signin-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-group label {
+    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 8px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4400ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signin-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .signin-box {
+      flex-direction: column;
+      width: 90%;
+      margin: 0px;
+    }
+  
+    .signin-image {
+      width: 100%;
+    }
+  
+    .signin-form {
+      width: 100%;
+    }
+
+    .form-group input {
+        width: 90%;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .signin-form {
+      padding: 20px;
+    }
+  }
+  
